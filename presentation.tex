@@ -4,16 +4,54 @@
 \usecolortheme{seahorse}
 \usecolortheme{rose}
 
-\author[Mulvihill]{\large Markus Mulvihill}
-
-
-\title[Thesis Presentation]{Modeling Nonlinear Insulin-Glucose Dynamics in Critically-ill Patients}
-\institute[KTH]{\small KTH Royal Institute of Technology}
-\date[Aug 2026]{\small August 7th, 2026}
-\titlegraphic{\includegraphics[width=1.5cm]{kthgraphics/KTH-logo.pdf}}
+\usepackage[english]{babel}
 
 
 \usepackage[utf8]{inputenc}
+\usepackage[
+  backend=biber,
+  style=authoryear,
+  sorting=ynt,
+]{biblatex}
+\addbibresource{myreferences.bib}
+\AtEveryBibitem{%
+  \clearfield{url}%
+  \clearfield{urldate}%
+  \clearfield{journaltitle}%
+  \clearfield{volume}%
+  \clearfield{number}%
+  \clearfield{eprint}%
+  \clearfield{isbn}%
+  \clearfield{issn}%
+  \clearfield{pages}%
+  \clearfield{pagetotal}%
+  \clearfield{day}%,
+  \clearfield{note}%
+  \clearfield{pages}%
+  \clearfield{pmid}%
+  \clearfield{pmcid}%
+  \clearfield{handle}%
+  \clearfield{series}%
+  \clearfield{booktitle}%
+  \clearfield{maintitle}%
+  \clearfield{editor}%
+  \clearfield{eventtitle}%
+}
+
+\renewbibmacro*{url+urldate}{}
+\renewbibmacro*{doi+eprint+url}{\printfield{doi}}
+
+\author[Mulvihill]{\large Markus Mulvihill}
+
+
+\title[Thesis Presentation]{Estimating Nonlinear Insulin-Glucose Dynamics in Critically-ill Patients}
+\institute[KTH]{\small KTH Royal Institute of Technology}
+\date[Aug 2026]{\small August 7th, 2026}
+\titlegraphic{\includegraphics[width=1.5cm]{kthgraphics/KTH-logo.pdf}}
+\DeclareMathOperator{\Min}{min}
+
+
+%\beamerdefaultoverlayspecification{<+->}
 
 \begin{document}
 
@@ -27,24 +65,25 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\AtBeginSection[]
+
+\AtBeginSubsection[]
 {
-  \begin{frame}
-    \frametitle{Table of Contents}
-    \tableofcontents[currentsection]
-  \end{frame} 
+  \begin{frame}<beamer>{Outline}
+    \tableofcontents[currentsection,currentsubsection]
+  \end{frame}
 }
 
-\section{Introduction}
+\section{Motivation}
 
+\subsection{The Fundamental Problem Addressed}
 \begin{frame}
-  \frametitle{Stress Hyperglycaemia}
+  \frametitle{Stress Hyperglycaemia in ICU Patients}
   \begin{enumerate}
-    \item<1-> Patients suffering from critical illnesses incur metabolic changes from acute stress
+    \item<1-> Patients suffering from critical illnesses are subjected to metabolic changes from acute stress
     \note<1->[item] {Inflammatory response secretes stress hormones}
     \note<1->[item] {Acute myocardial infarction, sepsis, stroke}
     \item<2-> Instances of stress-induced hyperglycaemia have been identified to accompany the onset of \alert{mortality} 
-    \item<3-> In a controlled study, tightly maintaining glycaemic levels (4 mmol/L - 6 mmol/L) reduced mortalities by 50\% compared to conventional methods
+    \item<3-> Tightly maintaining glycaemic levels in ranges 4 mmol/L to 6 mmol/L reduced mortalities by 50\% \parencite{berghe_intensive_2001}
   \end{enumerate}
 \end{frame}
 
@@ -53,27 +92,55 @@
   \begin{columns}
     \begin{column}{5cm}
       \begin{enumerate}
-        \item<1-> Relying on insulin infusions to tightly control blood glucose struggles to address patient variability
-        \note[item]<1->{Infrequent measurements, not considering nutrition, and not complex to monitor dynamics changes in patient health.}
-        \item<2-> Consequences in poor patient adaptability has resulted in greater cases of hypoglycaemia and high glycaemic variation
+        \item<1-> Solely utilizing insulin infusions to tightly control blood glucose struggles to address patient variability
+        \note[item]<1->{Infrequent measurements, not considering nutrition, and not complex to monitor dynamics changes in patient health}
+        \item<2-> Poor patient adaptability additionally results in cases of hypoglycaemia and high glycaemic variation
       \end{enumerate}
     \end{column}
     \begin{column}{5cm}    
       \begin{figure}
         \centering
-        \includegraphics{kthgraphics/example.pdf}
-        \note[item]<2->{A patient with nutrition intake at 2 and 4 hours}
-        \caption{Blood Glucose Example}
+        \visible<3->{%
+          \includegraphics[width=0.96\linewidth]{kthgraphics/example.pdf}
+          \note[item]<3->{A patient with exogenous insulin that exponentially decreases}
+          \caption{Blood Glucose Example}
+        }
       \end{figure}
     \end{column}
   \end{columns}
 \end{frame}
 
+\begin{frame}
+  \frametitle{Role of Model-based Glycaemic Control}
+  \begin{enumerate}
+    \item<1-> Mathematical formulations of pancreas function can provide additional insight into glycaemic levels and endogenous insulin production     
+    \item<2->\alert{Consequently, physiological models better capture patients' insulin-glucose dynamics to sustain glycaemic ranges} 
+    \note[item]<2->{Better method than IIT to be specific}
+  \end{enumerate}
+\end{frame}
 
-\section{Background}
+\subsection{Previous Work}
+
 
 \begin{frame}
-  Sample text 
+  \frametitle{Intensive Control Insulin-Nutrition-Glucose (ICING) model}
 \end{frame}
+
+\section{Results and Contributions}
+
+\subsection{Main Results}
+
+\subsection{Key Ideas Behind Implementation}
+
+\section{Summary}
+
+\subsection{Takeaways}
+
+\subsection{Further Reading}
+\begin{frame}
+  \frametitle{References}
+  \printbibliography
+\end{frame}
+
 
 \end{document}

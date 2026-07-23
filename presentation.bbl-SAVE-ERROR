@@ -1,0 +1,237 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{ynt/global//global/global/global}
+    \entry{berghe_intensive_2001}{article}{}{}
+      \name{author}{10}{}{%
+        {{un=0,uniquepart=base,hash=8359caaa779037b901720d8c8fa0ffc8}{%
+           family={Berghe},
+           familyi={B\bibinitperiod},
+           given={Greet\bibnamedelimb Van\bibnamedelima den},
+           giveni={G\bibinitperiod\bibinitdelim V\bibinitperiod\bibinitdelim d\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=9df08a724bb83b4a09e45550480e1292}{%
+           family={Wouters},
+           familyi={W\bibinitperiod},
+           given={Pieter},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=fb5f554384e7c6d569c9e4d733f66a65}{%
+           family={Weekers},
+           familyi={W\bibinitperiod},
+           given={Frank},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=de3fd1440dbf5163e045d6ee3a71e004}{%
+           family={Verwaest},
+           familyi={V\bibinitperiod},
+           given={Charles},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=84fa0bad442dec80640bf1126ef9d25c}{%
+           family={Bruyninckx},
+           familyi={B\bibinitperiod},
+           given={Frans},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=89e11586dbff49e23225b5ad755deeb0}{%
+           family={Schetz},
+           familyi={S\bibinitperiod},
+           given={Miet},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c4f7bf399ff666dfbc8207bce66f44d3}{%
+           family={Vlasselaers},
+           familyi={V\bibinitperiod},
+           given={Dirk},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=425df87ffd5a6af300a1aa221849cc82}{%
+           family={Ferdinande},
+           familyi={F\bibinitperiod},
+           given={Patrick},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=423fa525a4c10949e7b647adbdcf206e}{%
+           family={Lauwers},
+           familyi={L\bibinitperiod},
+           given={Peter},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a9a9641c5abcb690a232cb2320345f28}{%
+           family={Bouillon},
+           familyi={B\bibinitperiod},
+           given={Roger},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Massachusetts Medical Society}%
+      }
+      \strng{namehash}{3d1bd746db0bfb6bf6f61b03a1199158}
+      \strng{fullhash}{6f6ae00d597d4d9ee1b846ff46631b12}
+      \strng{fullhashraw}{6f6ae00d597d4d9ee1b846ff46631b12}
+      \strng{bibnamehash}{3d1bd746db0bfb6bf6f61b03a1199158}
+      \strng{authorbibnamehash}{3d1bd746db0bfb6bf6f61b03a1199158}
+      \strng{authornamehash}{3d1bd746db0bfb6bf6f61b03a1199158}
+      \strng{authorfullhash}{6f6ae00d597d4d9ee1b846ff46631b12}
+      \strng{authorfullhashraw}{6f6ae00d597d4d9ee1b846ff46631b12}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Hyperglycemia is common in critically ill patients, but it is not known whether normalization of blood glucose levels with insulin therapy improves the prognosis. This trial compared intensive insulin treatment (maintenance of blood glucose levels at 80 to 110 mg per deciliter) with conventional treatment in patients admitted to a surgical intensive care unit. Most of the patients did not have a history of diabetes. Intensive insulin therapy reduced mortality among patients who spent more than five days in the intensive care unit and reduced rates of multiple-organ failure due to sepsis and acute renal failure. The results of this trial suggest that intensive treatment of modest hyperglycemia may have a substantial effect on the prognosis. Critically ill patients who require intensive care for more than five days have a 20 percent risk of death and substantial morbidity.1 Critical-illness polyneuropathy and skeletal-muscle wasting prolong the need for mechanical ventilation.2–5 Moreover, increased susceptibility to severe infections and failure of vital organs amplify the risk of an adverse outcome. Hyperglycemia associated with insulin resistance6–8 is common in critically ill patients, even those who have not previously had diabetes. It has been reported that pronounced hyperglycemia may lead to complications in such patients,9–13 although data from controlled trials are lacking. In diabetic patients with acute myocardial . . .}
+      \field{day}{8}
+      \field{issn}{0028-4793}
+      \field{journaltitle}{New England Journal of Medicine}
+      \field{month}{11}
+      \field{note}{\_eprint: https://www.nejm.org/doi/pdf/10.1056/{NEJMoa}011300}
+      \field{number}{19}
+      \field{title}{Intensive Insulin Therapy in Critically Ill Patients}
+      \field{urlday}{19}
+      \field{urlmonth}{1}
+      \field{urlyear}{2026}
+      \field{volume}{345}
+      \field{year}{2001}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{1359\bibrangedash 1367}
+      \range{pages}{9}
+      \verb{doi}
+      \verb 10.1056/NEJMoa011300
+      \endverb
+      \verb{file}
+      \verb Full Text PDF:/Users/juni/Zotero/storage/D2Y5GRRA/Berghe et al. - 2001 - Intensive Insulin Therapy in Critically Ill Patients.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://www.nejm.org/doi/full/10.1056/NEJMoa011300
+      \endverb
+      \verb{url}
+      \verb https://www.nejm.org/doi/full/10.1056/NEJMoa011300
+      \endverb
+    \endentry
+    \entry{lin_physiological_2011}{article}{}{}
+      \name{author}{9}{}{%
+        {{un=0,uniquepart=base,hash=8e95f02a273c85ee5bc8c0638ac6d4c3}{%
+           family={Lin},
+           familyi={L\bibinitperiod},
+           given={Jessica},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=1ffea7e02061a1a0159aa77e2db14c15}{%
+           family={Razak},
+           familyi={R\bibinitperiod},
+           given={Normy\bibnamedelima N.},
+           giveni={N\bibinitperiod\bibinitdelim N\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=6379e2f1999457988d08ca57265a04c0}{%
+           family={Pretty},
+           familyi={P\bibinitperiod},
+           given={Christopher\bibnamedelima G.},
+           giveni={C\bibinitperiod\bibinitdelim G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=3a91ede668fdd0db72152f93d6282dda}{%
+           family={Le\bibnamedelima Compte},
+           familyi={L\bibinitperiod\bibinitdelim C\bibinitperiod},
+           given={Aaron},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=1323ace27f800d0634ab9f87c0e6e529}{%
+           family={Docherty},
+           familyi={D\bibinitperiod},
+           given={Paul},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=3fae085fd0827f1bc5c8aaf00f62d023}{%
+           family={Parente},
+           familyi={P\bibinitperiod},
+           given={Jacquelyn\bibnamedelima D.},
+           giveni={J\bibinitperiod\bibinitdelim D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=0c4ea381e3ad9f041ebf91f3b6abb68f}{%
+           family={Shaw},
+           familyi={S\bibinitperiod},
+           given={Geoffrey\bibnamedelima M.},
+           giveni={G\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b33ab5bdcf04953392287d8382da8d13}{%
+           family={Hann},
+           familyi={H\bibinitperiod},
+           given={Christopher\bibnamedelima E.},
+           giveni={C\bibinitperiod\bibinitdelim E\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ac60e88f6f6922b1fcaf83361b70dae9}{%
+           family={Geoffrey\bibnamedelima Chase},
+           familyi={G\bibinitperiod\bibinitdelim C\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{67ea6796e899295cd07d28ba33cdaf8f}
+      \strng{fullhash}{d39bb68945f494568b6ca3988927e080}
+      \strng{fullhashraw}{d39bb68945f494568b6ca3988927e080}
+      \strng{bibnamehash}{67ea6796e899295cd07d28ba33cdaf8f}
+      \strng{authorbibnamehash}{67ea6796e899295cd07d28ba33cdaf8f}
+      \strng{authornamehash}{67ea6796e899295cd07d28ba33cdaf8f}
+      \strng{authorfullhash}{d39bb68945f494568b6ca3988927e080}
+      \strng{authorfullhashraw}{d39bb68945f494568b6ca3988927e080}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Intensive insulin therapy ({IIT}) and tight glycaemic control ({TGC}), particularly in intensive care unit ({ICU}), are the subjects of increasing and controversial debate in recent years. Model-based {TGC} has shown potential in delivering safe and tight glycaemic management, all the while limiting hypoglycaemia. A comprehensive, more physiologically relevant Intensive Control Insulin-Nutrition-Glucose ({ICING}) model is presented and validated using data from critically ill patients. Two existing glucose–insulin models are reviewed and formed the basis for the {ICING} model. Model limitations are discussed with respect to relevant physiology, pharmacodynamics and {TGC} practicality. Model identifiability issues are carefully considered for clinical settings. This article also contains significant reference to relevant physiology and clinical literature, as well as some references to the modeling efforts in this field. Identification of critical constant population parameters was performed in two stages, thus addressing model identifiability issues. Model predictive performance is the primary factor for optimizing population parameter values. The use of population values are necessary due to the limited clinical data available at the bedside in the clinical control scenario. Insulin sensitivity, {SI}, the only dynamic, time-varying parameter, is identified hourly for each individual. All population parameters are justified physiologically and with respect to values reported in the clinical literature. A parameter sensitivity study confirms the validity of limiting time-varying parameters to {SI} only, as well as the choices for the population parameters. The {ICING} model achieves median fitting error of {<}1\% over data from 173 patients (N=42,941h in total) who received insulin while in the {ICU} and stayed for ≥72h. Most importantly, the median per-patient 1-h ahead prediction error is a very low 2.80\% [{IQR} 1.18, 6.41\%]. It is significant that the 75th percentile prediction error is within the lower bound of typical glucometer measurement errors of 7–12\%. These results confirm that the {ICING} model is suitable for developing model-based insulin therapies, and capable of delivering real-time model-based {TGC} with a very tight prediction error range. Finally, the detailed examination and discussion of issues surrounding model-based {TGC} and existing glucose–insulin models render this article a mini-review of the state of model-based {TGC} in critical care.}
+      \field{day}{1}
+      \field{issn}{0169-2607}
+      \field{journaltitle}{Computer Methods and Programs in Biomedicine}
+      \field{month}{5}
+      \field{number}{2}
+      \field{series}{Glucose Modelling: Selected extended papers from the 7th {IFAC} Symposium on Modelling and Control in Biomedical Systems}
+      \field{title}{A physiological Intensive Control Insulin-Nutrition-Glucose ({ICING}) model validated in critically ill patients}
+      \field{urlday}{19}
+      \field{urlmonth}{1}
+      \field{urlyear}{2026}
+      \field{volume}{102}
+      \field{year}{2011}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{192\bibrangedash 205}
+      \range{pages}{14}
+      \verb{doi}
+      \verb 10.1016/j.cmpb.2010.12.008
+      \endverb
+      \verb{file}
+      \verb ScienceDirect Full Text PDF:/Users/juni/Zotero/storage/95LTEGL7/Lin et al. - 2011 - A physiological Intensive Control Insulin-Nutrition-Glucose (ICING) model validated in critically il.pdf:application/pdf;ScienceDirect Snapshot:/Users/juni/Zotero/storage/6TEESBTT/S0169260710003007.html:text/html
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/S0169260710003007
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/S0169260710003007
+      \endverb
+      \keyw{Blood glucose,Critical care,Insulin sensitivity,Insulin therapy,Model-based control,Predictive performance,{TGC},Tight blood glucose control}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+
