@@ -41,6 +41,8 @@
 \renewbibmacro*{url+urldate}{}
 \renewbibmacro*{doi+eprint+url}{\printfield{doi}}
 
+\usepackage{booktabs,xcolor,tabularx}
+
 \author[Mulvihill]{\large Markus Mulvihill}
 
 
@@ -78,45 +80,62 @@
 \subsection{The Fundamental Problem Addressed}
 \begin{frame}
   \frametitle{Stress Hyperglycaemia in ICU Patients}
-  \begin{enumerate}
-    \item<1-> Patients suffering from critical illnesses are subjected to metabolic changes from acute stress
-    \note<1->[item] {Inflammatory response secretes stress hormones}
-    \note<1->[item] {Acute myocardial infarction, sepsis, stroke}
-    \item<2-> Instances of stress-induced hyperglycaemia have been identified to accompany the onset of \alert{mortality} 
-    \item<3-> Tightly maintaining glycaemic levels in ranges 4 mmol/L to 6 mmol/L reduced mortalities by 50\% \parencite{berghe_intensive_2001}
-  \end{enumerate}
+  \begin{figure}
+    \centering 
+    \includegraphics[width=0.96\linewidth]{kthgraphics/problem.pdf}
+    \end{figure}
+  \note[item] {Inflammatory response secretes stress hormones}
+  \note[item] {Acute myocardial infarction, sepsis, stroke}
+  \end{frame}
+
+\begin{frame}
+     \frametitle{Addressing Hyperglycaemia}
+     \begin{columns}[t]
+      \begin{column}{0.48\linewidth}
+        \begin{itemize}
+            \item \textbf{Problem}: \\
+            \visible<2->{Stress-induced hyperglycaemia \alert{increases} the likelihood of \alert{mortality}.} \\
+        \end{itemize}
+      \end{column}
+      \begin{column}{0.48\linewidth}
+        \begin{itemize}
+          \item \textbf{A solution}: \\
+          \visible<3->{Maintaining glycaemic levels to 4-6 mmol/L reduced mortalities by 50\% \parencite{berghe_intensive_2001}.}
+        \end{itemize}
+      \end{column}
+     \end{columns}
 \end{frame}
 
 \begin{frame}
   \frametitle{Limitations of Intensive Insulin Therapy}
   \begin{columns}
-    \begin{column}{5cm}
-      \begin{enumerate}
-        \item<1-> Solely utilizing insulin infusions to tightly control blood glucose struggles to address patient variability
-        \note[item]<1->{Infrequent measurements, not considering nutrition, and not complex to monitor dynamics changes in patient health}
-        \item<2-> Poor patient adaptability additionally results in cases of hypoglycaemia and high glycaemic variation
-      \end{enumerate}
-    \end{column}
-    \begin{column}{5cm}    
-      \begin{figure}
-        \centering
-        \visible<3->{%
+    \begin{column}{0.48\linewidth}   
+        \begin{figure}
+          \centering
           \includegraphics[width=0.96\linewidth]{kthgraphics/example.pdf}
-          \note[item]<3->{A patient with exogenous insulin that exponentially decreases}
-          \caption{Blood Glucose Example}
-        }
-      \end{figure}
+          \caption{Tightly Controlled Blood Glucose}
+        \end{figure}
+    \end{column}
+    \begin{column}{0.48\linewidth}
+      \begin{itemize}
+        \item<1-> \textbf{What}: \\
+         \only<2->{Poor patient adaptability results in cases of \alert{hypoglycaemia} and \alert{high glycaemic variation}. \\}
+        \note<3->{Infrequent measurements, not considering nutrition, and not complex to monitor dynamics changes in patient health}
+        \item<1-> \textbf{Why}: \\
+        \only<3->{Solely utilizing insulin infusions struggles to address patient variability. \\}  
+      \end{itemize}
     \end{column}
   \end{columns}
 \end{frame}
 
 \begin{frame}
   \frametitle{Role of Model-based Glycaemic Control}
-  \begin{enumerate}
-    \item<1-> Mathematical formulations of pancreas function can provide additional insight into glycaemic levels and endogenous insulin production     
+  \begin{itemize}
+    \item \textbf{Maybe do a nice photo showing how to convert insulin to equations instead of this long boring text}
+    \item<1-> Mathematical formulations of pancreas function provides more insight into glycaemic levels and endogenous insulin production     
     \item<2->\alert{Consequently, physiological models better capture patients' insulin-glucose dynamics to sustain glycaemic ranges} 
     \note[item]<2->{Better method than IIT to be specific}
-  \end{enumerate}
+  \end{itemize}
 \end{frame}
 
 \subsection{Previous Work}
@@ -124,6 +143,41 @@
 
 \begin{frame}
   \frametitle{Intensive Control Insulin-Nutrition-Glucose (ICING) model}
+
+  \begin{exampleblock}{}
+    \citeauthor{lin_physiological_2011} has developed a clinically-validated insulin-glucose model with the following main components
+  \end{exampleblock}
+
+  \begin{table}
+    \centering
+    \small
+    \begin{tabularx}{0.96\linewidth}{>{\raggedright\arraybackslash}X l r}
+      \toprule
+      \textbf{Dynamic}  & \textbf{Notation} & \textbf{Value} \\
+      \midrule
+      Blood Glucose & $\dot{G}$ & mmol/L \\
+      Intersitial Plasma & $\dot{Q}$ & mU/L \\
+      Plasma Insulin & $\dot{I}$ & mU/L \\
+      Glucose in the Stomach & $\dot{\,P1}$ & mmol \\
+      Glucose in the Gut & $\dot{\,P2}$ & mmol \\
+      Endogenous Insulin Production & $u_{\,en}(t)$ & mU/min \\
+      Insulin Sensitivity & $S_I(t)$ & - \\
+      \midrule
+      \textbf{Input}  & \textbf{Notation} & \textbf{Value} \\
+      \midrule
+      Exogenous Insulin & $u_{\,ex}(t)$ & mU/min \\
+      Enternal Food & $D(t)$ & mmol/min \\
+      Parenteral Glucose & $P_N(t)$ & mmol/min \\
+      \bottomrule
+    \end{tabularx}
+  \end{table}
+\end{frame}
+
+\begin{frame}
+ \frametitle{Computational Approximation of the ICING model} 
+ \begin{itemize}
+  \item<1-> The ICING model
+ \end{itemize}
 \end{frame}
 
 \section{Results and Contributions}
