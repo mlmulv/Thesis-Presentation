@@ -130,13 +130,13 @@
 
 \begin{frame}
   \frametitle{Role of Model-based Glycaemic Control}
-  \begin{itemize}
-    \item \textbf{Maybe do a nice photo showing how to convert insulin to equations instead of this long boring text}
-    \item<1-> Mathematical formulations of pancreas function provides more insight into glycaemic levels and endogenous insulin production     
-    \item<2->\alert{Consequently, physiological models better capture patients' insulin-glucose dynamics to sustain glycaemic ranges} 
-    \note[item]<2->{Better method than IIT to be specific}
-  \end{itemize}
+  \begin{figure}
+    \includegraphics[width=0.96\linewidth]{kthgraphics/motivation.pdf}
+  \end{figure}
+  \visible<2->{\alert{Physiological models can provide more insight into patients' insulin-glucose dynamics than solely relying on glycaemic measurements.}} 
+  \note{Insulin infusions combined with better understanding of dynamics can provide more insight to the clinicians}
 \end{frame}
+
 
 \subsection{Previous Work}
 
@@ -145,7 +145,7 @@
   \frametitle{Intensive Control Insulin-Nutrition-Glucose (ICING) model}
 
   \begin{exampleblock}{}
-    \citeauthor{lin_physiological_2011} has developed a clinically-validated insulin-glucose model with the following main components
+    \citeauthor{lin_physiological_2011} has developed a clinically-validated nonlinear insulin-glucose model with the following main components
   \end{exampleblock}
 
   \begin{table}
@@ -176,8 +176,59 @@
 \begin{frame}
  \frametitle{Computational Approximation of the ICING model} 
  \begin{itemize}
-  \item<1-> The ICING model
+    \item The ICING model equations are defined in continuous-time
+    \item Discretization of the model is required for the presented estimation methods
  \end{itemize}
+  \begin{exampleblock}{For an example dynamic $F$}
+   \begin{align*}
+    t_k &= t_{k-1} + \Delta \\
+    \dot{F} &\approx \frac{F(t_{k}) - F(t_{k} - \Delta)}{\Delta} \\
+    F_{k} &\approx F_{k-1} + \Delta \dot{F}.
+   \end{align*} 
+  \end{exampleblock}
+  \note[item]{According to Euler's method}
+  \note[item]{Discretization error is bounded by $\Delta$}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Bayesian Filtering}
+  \onslide<1->{The discrete-time dynamic ICING model can be represented in the stochastic state-space.} \\ 
+  \begin{columns}
+    \begin{column}{0.45\linewidth}
+      \onslide<2->{
+        \begin{exampleblock}{State-space Representation}
+          \begin{align*}
+            x_{k} &\sim p(x_{k} \mid x_{k-1},\,u_{k-1}) \\
+            y_{k} &\sim p(y_{k} \mid x_{k})
+          \end{align*}
+        \end{exampleblock}
+      }
+    \end{column}
+    \begin{column}{0.48\linewidth}
+    \onslide<2->{
+      \begin{table}
+        \centering
+        \begin{tabularx}{0.96\linewidth}{>{\raggedright\arraybackslash}X r}
+          \toprule
+          \textbf{System Variable} & \textbf{Notation} \\
+          \midrule
+          Dynamics & $x_k$ \\
+          Inputs & $u_k$ \\
+          Measurements & $y_k$ \\
+          \bottomrule
+        \end{tabularx}
+      \end{table}
+    }
+    \end{column}
+  \end{columns}
+  \vspace{1em}
+  \onslide<3->{There are various methods of optimal filtering, and each has their own assumptions and limitations.}
+  \note[item]<2->{The measurement often depends on the hospital, but will be discussed more later \\}
+  \note[item]<3->{Just the EKF and the PF will be in the topic of this thesis}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Extended Kalman Filter}
 \end{frame}
 
 \section{Results and Contributions}
