@@ -76,16 +76,42 @@
 }
 
 \section{Motivation}
-
 \subsection{The Fundamental Problem Addressed}
+
 \begin{frame}
-  \frametitle{Stress Hyperglycaemia in ICU Patients}
+  \frametitle{Fundamentals of Glucoregulation}
   \begin{figure}
-    \centering 
-    \includegraphics[width=0.96\linewidth]{kthgraphics/problem.pdf}
-    \end{figure}
-  \note[item] {Inflammatory response secretes stress hormones}
-  \note[item] {Acute myocardial infarction, sepsis, stroke}
+    \centering
+    \includegraphics[height=0.7\textheight]{kthgraphics/glucoreg-overview.pdf}
+    \caption{Flowchart of glucoregulation in healthy individuals.}
+  \end{figure}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Insulin Resistance in ICU Patients}
+  \begin{columns}
+    \begin{column}{0.48\linewidth}
+      \only<1->{
+        \begin{figure}
+          \includegraphics[height=0.7\textheight]{kthgraphics/new_problem.pdf}
+          \caption{Consequence of insulin resistance in ICU patients.}
+        \end{figure}
+      }
+    \end{column}
+    \begin{column}{0.48\linewidth}
+      \begin{itemize}
+        \item<1-> Critically ill patients' bodies do not respond normally to insulin.
+        \item<2-> Stress induced from critical illness increase insulin resistance.
+        \item<3-> Lack of glycogen production in the liver creates an excess of blood glucose (hyperglycaemia).
+      \end{itemize} 
+    \end{column}
+  \end{columns}
+  % \begin{figure}
+  %   \centering 
+  %   \includegraphics[width=0.96\linewidth]{kthgraphics/problem.pdf}
+  %   \end{figure}
+  % \note[item] {Inflammatory response secretes stress hormones}
+  % \note[item] {Acute myocardial infarction, sepsis, stroke}
   \end{frame}
 
 \begin{frame}
@@ -107,7 +133,20 @@
 \end{frame}
 
 \begin{frame}
-  \frametitle{Limitations of Intensive Insulin Therapy}
+  \frametitle{Intensive Insulin Therapy}
+  \begin{itemize}
+    \item \textbf{What}: \only<2->{Utilizing aggressive insulin infusions and feeding inputs to tightly control blood glucose.} 
+    \item \textbf{Goal}: \only<3->{Prevent hyperglycaemia in patients to reduce mortalities and longer visitation stays.}
+    \item \textbf{How}: \only<4->{Insulin therapy traditionally has relied on ad-hoc sliding protocols.} \only<5->{(\textcolor{red}{?})}
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Example of an Ad-hoc Sliding Protocol}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Limitations of Tight Glucose Control}
   \begin{columns}
     \begin{column}{0.48\linewidth}   
         \begin{figure}
@@ -133,7 +172,7 @@
   \begin{figure}
     \includegraphics[width=0.96\linewidth]{kthgraphics/motivation.pdf}
   \end{figure}
-  \visible<2->{\alert{Physiological models can provide more insight into patients' insulin-glucose dynamics than solely relying on glycaemic measurements.}} 
+  \alert{Physiological models can provide more insight into patients' insulin-glucose dynamics than solely relying on glycaemic measurements.}
   \note{Insulin infusions combined with better understanding of dynamics can provide more insight to the clinicians}
 \end{frame}
 

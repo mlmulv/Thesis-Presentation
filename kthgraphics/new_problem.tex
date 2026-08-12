@@ -1,0 +1,31 @@
+\begin{tikzpicture}
+  \node[draw, shape=circle, fill=black, minimum width=15pt] (node1) at (2.57,4.8) {};
+  \draw[->] (node1.south west) -- (node2.north);
+
+  \node[draw, align=center, fill=magenta!92!white!53!lightgray] (node3) at (3.83,3.4) {\uparrow\\Blood Glucose};
+  \draw[->] (node1.south east) -- (node3.north);
+
+
+  \node[draw, align=center, fill=white!90!black!73!magenta] (node6) at (3.83,1.7) {Insulin\\Production};
+  \draw[->] (node3.south) -- (node6.north) node[midway,right, align=center] {$\beta$ cells};
+
+  \node[draw, align=center, fill=white!93!magenta!71!purple] (node7) at (3.83,-2.1) {Glucose\\$\downarrow$\\Glycogen};
+
+  \draw[->] (5.71,4.8) -- (node1.east);
+
+  \node[draw=black, align=center, fill=yellow!88!teal!39!magenta] (node8) at (3.83,0.01) {Kidney \\filters\\Insulin};
+  #eca8c8
+  \draw[->] (node6.south) -- (node8.north);
+  \draw[->] (node8.south) -- (node7.north) node[midway,right] {liver cells};
+
+  \draw (node7.south) -- (3.83,-3.28);
+  \draw (5.7,4.8) -- (5.71,-3.28);
+  \draw (3.83,-3.24) circle (0cm);
+  \draw[fill=black] (3.83,-3.24) circle (0.06cm);
+
+  \draw[fill=black] (5.71,-3.24) circle (0.06cm);
+  \draw (3.81,-3.24) -- (5.17,-4);
+
+
+  \draw[fill=black] (5.17,-4) circle (0.06cm);
+\end{tikzpicture}

@@ -1,0 +1,29 @@
+\begin{tikzpicture}
+  \node[draw, shape=circle, fill=black, minimum width=15pt] (node1) at (2.57,4.8) {};
+  \node[draw, align=center, fill=magenta!92!white!53!lightgray] (node2) at (1.01,3.4) {\downarrow\\Blood Glucose};
+  \draw[->] (node1.south west) -- (node2.north);
+
+  \node[draw, align=center, fill=magenta!92!white!53!lightgray] (node3) at (3.83,3.4) {\uparrow\\Blood Glucose};
+  \draw[->] (node1.south east) -- (node3.north);
+  \node[draw, align=center, fill=white!90!black!73!magenta] (node4) at (1.01,1.7) {Glucagon\\Production};
+  \draw[->] (node2.south) -- (node4.north) node[midway, left, align=center] {$\alpha$ cells} ;
+  \node[draw, align=center, fill=white!93!magenta!71!purple] (node5) at (1.01,-0.21) {Glycogen\\$\downarrow$\\Glucose};
+  \draw[->] (node4.south) -- (node5.north) node[midway, left, align=center] {liver cells};
+
+
+  \node[draw, align=center, fill=white!90!black!73!magenta] (node6) at (3.83,1.7) {Insulin\\Production};
+  \draw[->] (node3.south) -- (node6.north) node[midway,right, align=center] {$\beta$ cells};
+
+  \node[draw, align=center, fill=white!93!magenta!71!purple] (node7) at (3.83,-2.1) {Glucose\\$\downarrow$\\Glycogen};
+
+  \draw[->] (5.71,4.8) -- (node1.east);
+
+  \draw (node5.south) -- (1.01,-3.37) -- (-0.85,-3.37) -- (-0.9,4.8);
+  \draw[->] (-0.91,4.8) -- (node1.west);
+  \node[draw=black, align=center, fill=yellow!88!teal!39!magenta] (node8) at (3.83,0.01) {Kidney \\filters\\Insulin};
+  #eca8c8
+  \draw[->] (node6.south) -- (node8.north);
+  \draw[->] (node8.south) -- (node7.north) node[midway,right] {liver cells};
+
+  \draw (node7.south) -- (3.83,-3.37) -- (5.7,-3.37) -- (5.7,4.8);
+\end{tikzpicture}

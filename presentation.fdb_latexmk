@@ -1,13 +1,13 @@
 # Fdb version 4
-["biber presentation"] 1785151119.98555 "presentation.bcf" "presentation.bbl" "presentation" 1785158292.29294 0
+["biber presentation"] 1785151119.98555 "presentation.bcf" "presentation.bbl" "presentation" 1786463352.89982 0
   "myreferences.bib" 1784818802.75885 63228 335b2cc8bdeda5042564c9b22bd98fc4 ""
-  "presentation.bcf" 1785158292.18691 108819 8d6e54eb6ec3552dae9709474192c2eb "pdflatex"
+  "presentation.bcf" 1786463352.78693 108819 8d6e54eb6ec3552dae9709474192c2eb "pdflatex"
   (generated)
   "presentation.bbl"
   "presentation.blg"
   (rewritten before read)
-["pdflatex"] 1785158290.27912 "/Users/juni/Documents/KTH/Thesis/Documents/kthlatex-master/kthpresentation/presentation.tex" "presentation.pdf" "presentation" 1785158292.29323 0
-  "/Users/juni/Documents/KTH/Thesis/Documents/kthlatex-master/kthpresentation/presentation.tex" 1785158290.0717 7574 1de676cbf5914d4eaae15787a1000113 ""
+["pdflatex"] 1786463350.63669 "/Users/juni/Documents/KTH/Thesis/Documents/kthlatex-master/kthpresentation/presentation.tex" "presentation.pdf" "presentation" 1786463352.90015 0
+  "/Users/juni/Documents/KTH/Thesis/Documents/kthlatex-master/kthpresentation/presentation.tex" 1786463345.56859 9083 5ef9eaa6ad7764aeb9369cad090afa50 ""
   "/usr/local/texlive/2026/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2026/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
   "/usr/local/texlive/2026/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1246382020 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -242,15 +242,16 @@
   "/usr/local/texlive/2026/texmf.cnf" 1774209515 577 648cd9f92f9c0eac486f4c71c85cfbbe ""
   "kthgraphics/KTH-logo.pdf" 1659714334 71365 402fa3b7bb4568f72f00bd9996f7ed2b ""
   "kthgraphics/example.pdf" 1784908326.39095 57133 be3ce7c32a5f389c0332f95ced8ff344 ""
+  "kthgraphics/glucoreg-overview.pdf" 1786441106.33112 106501 a1a47bbf65c4ce56ee00b75e1cc15ecc ""
   "kthgraphics/motivation.pdf" 1785141678.9297 930066 111770eb70ac6ee74dff49e267a78192 ""
-  "kthgraphics/problem.pdf" 1784906349.74397 60736 5f727dba289c9d5b568a40e15f48e85c ""
-  "presentation.aux" 1785158292.18339 6153 bac17d55701762ca5ba86c0f47d605d7 "pdflatex"
+  "kthgraphics/new_problem.pdf" 1786452307.9845 63837 4529d6e68fdb361497b2a4b54d4605b5 ""
+  "presentation.aux" 1786463352.78326 6637 ceb1a0e06302d43446897dc0810f400b "pdflatex"
   "presentation.bbl" 1785151121.87723 13560 a593fdcd10cddad16391a3d8162edc6e "biber presentation"
-  "presentation.nav" 1785158292.18768 3363 5ca40f7fd6503577e075d02f3aff05ac "pdflatex"
-  "presentation.out" 1785158292.18587 1378 bb6dce6151224fb78cb1737c30a013ab "pdflatex"
-  "presentation.run.xml" 1785158292.18762 2369 e682bb562b0152650dbb38572be2f79c "pdflatex"
-  "presentation.tex" 1785158290.0717 7574 1de676cbf5914d4eaae15787a1000113 ""
-  "presentation.toc" 1785158292.18771 552 0579c86c776d2dea7da3450496257cc4 "pdflatex"
+  "presentation.nav" 1786463352.78777 3738 b409b88dde1df2a70a6355488218b4d5 "pdflatex"
+  "presentation.out" 1786463352.78552 1378 afed551760aca51d0c37c640a3a0ca9b "pdflatex"
+  "presentation.run.xml" 1786463352.78769 2369 e682bb562b0152650dbb38572be2f79c "pdflatex"
+  "presentation.tex" 1786463345.56859 9083 5ef9eaa6ad7764aeb9369cad090afa50 ""
+  "presentation.toc" 1786463352.7878 552 f3eaeaec66d54ec6fc50f62887f18790 "pdflatex"
   (generated)
   "presentation.aux"
   "presentation.bcf"
