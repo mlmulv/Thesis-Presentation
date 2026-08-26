@@ -85,6 +85,8 @@
     \includegraphics[height=0.7\textheight]{kthgraphics/glucoreg-overview.pdf}
     \caption{Flowchart of glucoregulation in healthy individuals.}
   \end{figure}
+  \note[item]{The thesis revolves around the functionality of glucoregulation.}
+  \note[item]{A high level diagram of the human insulin-glucose system can be described as the image.}
 \end{frame}
 
 \begin{frame}
@@ -101,8 +103,9 @@
     \begin{column}{0.48\linewidth}
       \begin{itemize}
         \item<1-> Critically ill patients' bodies do not respond normally to insulin.
-        \item<2-> Stress induced from critical illness increase insulin resistance.
-        \item<3-> Lack of glycogen production in the liver creates an excess of blood glucose (hyperglycaemia).
+        \item<2-> Stress induced from critical illness has been observed with an increase of resistance to insulin.
+        \item<3-> Impaired glycogen production in the liver creates an excess of blood glucose (hyperglycaemia).
+        \note<3->{Mention that the break in the chain is just for visual purposes.}
       \end{itemize} 
     \end{column}
   \end{columns}
@@ -114,58 +117,75 @@
   % \note[item] {Acute myocardial infarction, sepsis, stroke}
   \end{frame}
 
-\begin{frame}
-     \frametitle{Addressing Hyperglycaemia}
-     \begin{columns}[t]
-      \begin{column}{0.48\linewidth}
-        \begin{itemize}
-            \item \textbf{Problem}: \\
-            \visible<2->{Stress-induced hyperglycaemia \alert{increases} the likelihood of \alert{mortality}.} \\
-        \end{itemize}
-      \end{column}
-      \begin{column}{0.48\linewidth}
-        \begin{itemize}
-          \item \textbf{A solution}: \\
-          \visible<3->{Maintaining glycaemic levels to 4-6 mmol/L reduced mortalities by 50\% \parencite{berghe_intensive_2001}.}
-        \end{itemize}
-      \end{column}
-     \end{columns}
-\end{frame}
+% \begin{frame}
+%      \frametitle{Addressing Hyperglycaemia}
+%      \begin{columns}[t]
+%       \begin{column}{0.48\linewidth}
+%         \begin{itemize}
+%             \item \textbf{Problem}: \\
+%             \visible<2->{Stress-induced hyperglycaemia \alert{increases} the likelihood of \alert{mortality}.} \\
+%         \end{itemize}
+%       \end{column}
+%       \begin{column}{0.48\linewidth}
+%         \begin{itemize}
+%           \item \textbf{A solution}: \\
+%           \visible<3->{Maintaining glycaemic levels to 4-6 mmol/L reduced mortalities by 50\% \parencite{berghe_intensive_2001}.}
+%         \end{itemize}
+%       \end{column}
+%      \end{columns}
+% \end{frame}
 
 \begin{frame}
   \frametitle{Intensive Insulin Therapy}
   \begin{itemize}
-    \item \textbf{What}: \only<2->{Utilizing aggressive insulin infusions and feeding inputs to tightly control blood glucose.} 
-    \item \textbf{Goal}: \only<3->{Prevent hyperglycaemia in patients to reduce mortalities and longer visitation stays.}
-    \item \textbf{How}: \only<4->{Insulin therapy traditionally has relied on ad-hoc sliding protocols.} \only<5->{(\textcolor{red}{?})}
+    \item \textbf{What}: \only<2->{Utilizes aggressive insulin infusions and feeding inputs to tightly control blood glucose.} 
+    \item \textbf{Goal}: \only<3->{Prevents hyperglycaemia in patients to reduce \alert{mortalities} and longer visitation stays.}
+    \item \textbf{How}: \only<4->{Traditionally has relied on ad-hoc sliding protocols.}
   \end{itemize}
 \end{frame}
 
 \begin{frame}
-  \frametitle{Example of an Ad-hoc Sliding Protocol}
-\end{frame}
-
-\begin{frame}
-  \frametitle{Limitations of Tight Glucose Control}
+  \frametitle{Overview of Ad-hoc Sliding Protocols}
   \begin{columns}
-    \begin{column}{0.48\linewidth}   
-        \begin{figure}
-          \centering
-          \includegraphics[width=0.96\linewidth]{kthgraphics/example.pdf}
-          \caption{Tightly Controlled Blood Glucose}
-        \end{figure}
+    \begin{column}{0.66\linewidth}
+      \begin{figure}
+        \centering
+        \includegraphics[width=0.95\linewidth]{kthgraphics/insulin_wheel.pdf}
+        \caption{Example of the SPRINT Protocol Insulin Wheel \parencite{lonergan_simple_2006}}
+      \end{figure}
     \end{column}
-    \begin{column}{0.48\linewidth}
+    \begin{column}{0.33\linewidth}
       \begin{itemize}
-        \item<1-> \textbf{What}: \\
-         \only<2->{Poor patient adaptability results in cases of \alert{hypoglycaemia} and \alert{high glycaemic variation}. \\}
-        \note<3->{Infrequent measurements, not considering nutrition, and not complex to monitor dynamics changes in patient health}
-        \item<1-> \textbf{Why}: \\
-        \only<3->{Solely utilizing insulin infusions struggles to address patient variability. \\}  
+          \item<1-> Requires specialized clinicians to administer insulin and feeding from complex flowcharts.
+          \item<2-> Struggles to adapt to the dynamic health of critically ill patients.
       \end{itemize}
     \end{column}
   \end{columns}
 \end{frame}
+
+
+
+% \begin{frame}
+%   \frametitle{Limitations of Tight Glucose Control}
+%   \begin{columns}
+%     \begin{column}{0.48\linewidth}   
+%         \begin{figure}
+%           \centering
+%           \includegraphics[width=\linewidth]{kthgraphics/example.pdf}
+%           \caption{Tightly Controlled Blood Glucose}
+%         \end{figure}
+%     \end{column}
+%     \begin{column}{0.48\linewidth}
+%       \begin{itemize}
+%         \item<1-> \textbf{What}: \\
+%          \only<2->{Poor patient adaptability results in cases of \alert{hypoglycaemia} and \alert{high glycaemic variation}. \\}
+%         \note<3->{Infrequent measurements, not considering nutrition, and not complex to monitor dynamics changes in patient health}
+%         \item<1-> \textbf{Why}: \\
+%         \only<3->{Solely utilizing insulin infusions struggles to address patient variability. \\}  
+%       \end{itemize}
+%     \end{column}
+%   \end{columns}
+% \end{frame}
 
 \begin{frame}
   \frametitle{Role of Model-based Glycaemic Control}
@@ -177,8 +197,7 @@
 \end{frame}
 
 
-\subsection{Previous Work}
-
+\subsection{Background}
 
 \begin{frame}
   \frametitle{Intensive Control Insulin-Nutrition-Glucose (ICING) model}
@@ -268,7 +287,61 @@
 
 \begin{frame}
   \frametitle{Extended Kalman Filter}
+  \onslide<1->{Approximates \alert{nonlinear} and \alert{Gaussian} dynamic and measurement models as a linear transformation.}
+  \onslide<2->{
+    \begin{enumerate}
+    \item \textit{Prediction step} 
+    \begin{equation} \label{eq:Predict}
+        \begin{aligned}
+            m_{k}^- &= f(m_{k-1},\,u_{k-1}), \\
+            P_{k}^- &= F_x(m_{k-1})P_{k-1}F_x^{\sf T}(m_{k-1}) + F_q(m_{k-1})Q_{k-1}F_q^{\sf T}(m_{k-1}). \notag
+        \end{aligned}
+    \end{equation}
+    \item \textit{Update step} 
+    \begin{equation} \label{eq:Update}
+        \begin{aligned}
+            v_{k} &= y_{k} - h(m_k^-), \\
+            S_{k} &= H_x(m_k^-)P_{k}^-H_x^{\sf T}(m_k^-) + H_r(m_k^-)R_kH_r^{\sf T}(m_k^-), \\
+            K_k &= P_k^-H_k^{\sf T}(m_k^-)S_k^{-1}, \\
+            m_k &= m_k^- + K_kv_k, \\
+            P_k &= P_k^- - K_kS_kK_k^{\sf T}.
+        \end{aligned} \notag
+    \end{equation}
+    \end{enumerate} 
+  }
 \end{frame}
+
+\begin{frame}
+  \frametitle{Bootstrap Particle Filter}
+  \onslide<1->{Formulates the posterior of the dynamic function as a Monte Carlo approximation.}
+  \onslide<2->{
+    \begin{enumerate}
+    \item Sample $N$ particles from the dynamic function
+    \begin{align}
+        x_k^{(i)} \sim p(x_k \mid x_{k-1}^{(i)},\,u_{k-1}) \quad i = 1,\dots, N. \notag
+    \end{align}
+    \item Update weights from the measurement
+    \begin{equation}
+        \begin{aligned}
+            w_k^{*(i)} &\propto p(y_k \mid x_k^{(i)})  \quad i = 1,\dots, N  ,\\
+            w_k^{(i)} &= \frac{w_k^{*(i)}}{\sum_{j=1}^{N} w_k^{*(j)}} \quad i = 1,\dots, N .
+        \end{aligned} \notag
+    \end{equation}
+    \item Systematically resample particles from a distribution proportional to the weights
+    \end{enumerate}
+  }
+\end{frame}
+
+\subsection{Previous Work}
+
+\begin{frame}
+  \frametitle{Formulation of Synthetic Patients}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Estimator Parameterization}
+\end{frame}
+
 
 \section{Results and Contributions}
 
