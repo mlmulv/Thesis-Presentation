@@ -449,19 +449,7 @@ INPUT /usr/local/texlive/2026/texmf-dist/tex/latex/sansmathaccent/ot1mathkerncms
 INPUT /usr/local/texlive/2026/texmf-dist/fonts/tfm/public/sansmathaccent/mathkerncmssi10.tfm
 INPUT /usr/local/texlive/2026/texmf-dist/fonts/tfm/public/sansmathaccent/mathkerncmssi8.tfm
 INPUT /usr/local/texlive/2026/texmf-dist/fonts/tfm/public/sansmathaccent/mathkerncmssi8.tfm
-INPUT ./kthgraphics/new_problem.pdf
-INPUT ./kthgraphics/new_problem.pdf
-INPUT ./kthgraphics/new_problem.pdf
-INPUT ./kthgraphics/new_problem.pdf
-INPUT ./kthgraphics/new_problem.pdf
-INPUT ./kthgraphics/new_problem.pdf
-INPUT ./kthgraphics/new_problem.pdf
-INPUT ./kthgraphics/new_problem.pdf
 INPUT /usr/local/texlive/2026/texmf-dist/fonts/tfm/public/cm/cmssbx10.tfm
-INPUT ./kthgraphics/insulin_wheel.pdf
-INPUT ./kthgraphics/insulin_wheel.pdf
-INPUT ./kthgraphics/insulin_wheel.pdf
-INPUT ./kthgraphics/insulin_wheel.pdf
 INPUT ./kthgraphics/insulin_wheel.pdf
 INPUT ./kthgraphics/insulin_wheel.pdf
 INPUT ./kthgraphics/insulin_wheel.pdf
@@ -499,6 +487,11 @@ INPUT /usr/local/texlive/2026/texmf-dist/fonts/tfm/public/cm/cmssi10.tfm
 INPUT ./presentation.toc
 INPUT ./presentation.toc
 INPUT presentation.toc
+INPUT ./kthgraphics/previous_patient.pdf
+INPUT ./kthgraphics/previous_patient.pdf
+INPUT ./kthgraphics/previous_patient.pdf
+INPUT ./kthgraphics/previous_patient.pdf
+INPUT ./kthgraphics/previous_patient.pdf
 INPUT ./presentation.toc
 INPUT ./presentation.toc
 INPUT presentation.toc
@@ -535,3 +528,4 @@ INPUT /usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.p
 INPUT /usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb
 INPUT /usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb
 INPUT /usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb
+INPUT /usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/symbols/msam7.pfb

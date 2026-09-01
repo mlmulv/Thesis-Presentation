@@ -19,114 +19,105 @@
 
 \refsection{0}
   \datalist[entry]{ynt/global//global/global/global}
-    \entry{berghe_intensive_2001}{article}{}{}
-      \name{author}{10}{}{%
-        {{un=0,uniquepart=base,hash=8359caaa779037b901720d8c8fa0ffc8}{%
-           family={Berghe},
-           familyi={B\bibinitperiod},
-           given={Greet\bibnamedelimb Van\bibnamedelima den},
-           giveni={G\bibinitperiod\bibinitdelim V\bibinitperiod\bibinitdelim d\bibinitperiod},
+    \entry{lonergan_simple_2006}{article}{}{}
+      \name{author}{9}{}{%
+        {{un=0,uniquepart=base,hash=8d0b050c8089a88b9a6b46a26f8e80da}{%
+           family={Lonergan},
+           familyi={L\bibinitperiod},
+           given={Timothy},
+           giveni={T\bibinitperiod},
            givenun=0}}%
-        {{un=0,uniquepart=base,hash=9df08a724bb83b4a09e45550480e1292}{%
-           family={Wouters},
+        {{un=0,uniquepart=base,hash=b3fa577a16395ddfbe1d494d07b875d5}{%
+           family={Compte},
+           familyi={C\bibinitperiod},
+           given={Aaron\bibnamedelima Le},
+           giveni={A\bibinitperiod\bibinitdelim L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=46d6a752feb624422a3a09f9e4cf82e5}{%
+           family={Willacy},
            familyi={W\bibinitperiod},
-           given={Pieter},
-           giveni={P\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=fb5f554384e7c6d569c9e4d733f66a65}{%
-           family={Weekers},
-           familyi={W\bibinitperiod},
-           given={Frank},
-           giveni={F\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=de3fd1440dbf5163e045d6ee3a71e004}{%
-           family={Verwaest},
-           familyi={V\bibinitperiod},
-           given={Charles},
-           giveni={C\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=84fa0bad442dec80640bf1126ef9d25c}{%
-           family={Bruyninckx},
-           familyi={B\bibinitperiod},
-           given={Frans},
-           giveni={F\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=89e11586dbff49e23225b5ad755deeb0}{%
-           family={Schetz},
-           familyi={S\bibinitperiod},
-           given={Miet},
+           given={Mike},
            giveni={M\bibinitperiod},
            givenun=0}}%
-        {{un=0,uniquepart=base,hash=c4f7bf399ff666dfbc8207bce66f44d3}{%
-           family={Vlasselaers},
-           familyi={V\bibinitperiod},
-           given={Dirk},
-           giveni={D\bibinitperiod},
+        {{un=0,uniquepart=base,hash=b009410ae393f167b00ea35180976819}{%
+           family={Chase},
+           familyi={C\bibinitperiod},
+           given={J.\bibnamedelimi Geoffrey},
+           giveni={J\bibinitperiod\bibinitdelim G\bibinitperiod},
            givenun=0}}%
-        {{un=0,uniquepart=base,hash=425df87ffd5a6af300a1aa221849cc82}{%
-           family={Ferdinande},
-           familyi={F\bibinitperiod},
-           given={Patrick},
-           giveni={P\bibinitperiod},
+        {{un=0,uniquepart=base,hash=0c4ea381e3ad9f041ebf91f3b6abb68f}{%
+           family={Shaw},
+           familyi={S\bibinitperiod},
+           given={Geoffrey\bibnamedelima M.},
+           giveni={G\bibinitperiod\bibinitdelim M\bibinitperiod},
            givenun=0}}%
-        {{un=0,uniquepart=base,hash=423fa525a4c10949e7b647adbdcf206e}{%
-           family={Lauwers},
+        {{un=0,uniquepart=base,hash=7f638cf97fc7862033cbf76c8b3569c4}{%
+           family={Wong},
+           familyi={W\bibinitperiod},
+           given={Xing-Wei},
+           giveni={X\bibinithyphendelim W\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=44c0dc9fb0951aa540d283cf22ce2d67}{%
+           family={Lotz},
            familyi={L\bibinitperiod},
-           given={Peter},
-           giveni={P\bibinitperiod},
+           given={Thomas},
+           giveni={T\bibinitperiod},
            givenun=0}}%
-        {{un=0,uniquepart=base,hash=a9a9641c5abcb690a232cb2320345f28}{%
-           family={Bouillon},
-           familyi={B\bibinitperiod},
-           given={Roger},
-           giveni={R\bibinitperiod},
+        {{un=0,uniquepart=base,hash=8e95f02a273c85ee5bc8c0638ac6d4c3}{%
+           family={Lin},
+           familyi={L\bibinitperiod},
+           given={Jessica},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b33ab5bdcf04953392287d8382da8d13}{%
+           family={Hann},
+           familyi={H\bibinitperiod},
+           given={Christopher\bibnamedelima E.},
+           giveni={C\bibinitperiod\bibinitdelim E\bibinitperiod},
            givenun=0}}%
       }
       \list{publisher}{1}{%
-        {Massachusetts Medical Society}%
+        {{SAGE} Publications}%
       }
-      \strng{namehash}{3d1bd746db0bfb6bf6f61b03a1199158}
-      \strng{fullhash}{6f6ae00d597d4d9ee1b846ff46631b12}
-      \strng{fullhashraw}{6f6ae00d597d4d9ee1b846ff46631b12}
-      \strng{bibnamehash}{3d1bd746db0bfb6bf6f61b03a1199158}
-      \strng{authorbibnamehash}{3d1bd746db0bfb6bf6f61b03a1199158}
-      \strng{authornamehash}{3d1bd746db0bfb6bf6f61b03a1199158}
-      \strng{authorfullhash}{6f6ae00d597d4d9ee1b846ff46631b12}
-      \strng{authorfullhashraw}{6f6ae00d597d4d9ee1b846ff46631b12}
+      \strng{namehash}{e6ddc143e98534ff449fdb186d75f659}
+      \strng{fullhash}{9fc8b04ed406146d575caf23ae457ed5}
+      \strng{fullhashraw}{9fc8b04ed406146d575caf23ae457ed5}
+      \strng{bibnamehash}{e6ddc143e98534ff449fdb186d75f659}
+      \strng{authorbibnamehash}{e6ddc143e98534ff449fdb186d75f659}
+      \strng{authornamehash}{e6ddc143e98534ff449fdb186d75f659}
+      \strng{authorfullhash}{9fc8b04ed406146d575caf23ae457ed5}
+      \strng{authorfullhashraw}{9fc8b04ed406146d575caf23ae457ed5}
       \field{sortinit}{2}
       \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{}
       \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{abstract}{Hyperglycemia is common in critically ill patients, but it is not known whether normalization of blood glucose levels with insulin therapy improves the prognosis. This trial compared intensive insulin treatment (maintenance of blood glucose levels at 80 to 110 mg per deciliter) with conventional treatment in patients admitted to a surgical intensive care unit. Most of the patients did not have a history of diabetes. Intensive insulin therapy reduced mortality among patients who spent more than five days in the intensive care unit and reduced rates of multiple-organ failure due to sepsis and acute renal failure. The results of this trial suggest that intensive treatment of modest hyperglycemia may have a substantial effect on the prognosis. Critically ill patients who require intensive care for more than five days have a 20 percent risk of death and substantial morbidity.1 Critical-illness polyneuropathy and skeletal-muscle wasting prolong the need for mechanical ventilation.2–5 Moreover, increased susceptibility to severe infections and failure of vital organs amplify the risk of an adverse outcome. Hyperglycemia associated with insulin resistance6–8 is common in critically ill patients, even those who have not previously had diabetes. It has been reported that pronounced hyperglycemia may lead to complications in such patients,9–13 although data from controlled trials are lacking. In diabetic patients with acute myocardial . . .}
-      \field{day}{8}
-      \field{issn}{0028-4793}
-      \field{journaltitle}{New England Journal of Medicine}
-      \field{month}{11}
-      \field{note}{\_eprint: https://www.nejm.org/doi/pdf/10.1056/{NEJMoa}011300}
-      \field{number}{19}
-      \field{title}{Intensive Insulin Therapy in Critically Ill Patients}
-      \field{urlday}{19}
-      \field{urlmonth}{1}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{Background: Hyperglycemia is prevalent in critical care, and tight control can significantly reduce mortality. However, current protocols have been considered taxing to administer and may require extra staff. In addition, increased insulin resistance and saturation effects limit the level of control possible using insulin alone. Thus, regulating both insulin and exogenous nutritional inputs is required to control blood glucose. Methods: A robust, easy-to-use protocol [“{SPRINT}” (Specialized Relative Insulin Nutrition Tables)] that employs both insulin and feed modulation is developed and analyzed using retrospective data from 19 patients with average Acute Physiology and Chronic Health Evaluation {II} score of 21.8. Results are compared with several published protocols in simulation, and verified in a proof-of-concept trial. Results: In simulation, 61.7\% of measurements were in the 75–110 mg/{dL} band and 83.5\% in the 75–140 mg/{dL} band. Results from the simulation of published protocols agreed with published results. Clinically, for two patients, 64\% and 85\% of measurements were between 75 and 110 mg/{dL} during the two proof-of-concept trials. Total enteral feeding was similar to, or exceeded, retrospective data. Conclusions: Tight control was achieved in simulation using a protocol that is easy to implement in an intensive care unit. Similarly tight control was also maintained during the two proof-of-concept clinical trials. Measurement frequency of 1–2 h is seen to be critical to achieving and maintaining tight control. The overall {SPRINT} protocol is easy to use for clinical staff and effective in achieving and maintaining normoglycemia in critical illness.}
+      \field{day}{1}
+      \field{issn}{1520-9156}
+      \field{journaltitle}{Diabetes Technology \& Therapeutics}
+      \field{month}{4}
+      \field{number}{2}
+      \field{shorttitle}{A Simple Insulin-Nutrition Protocol for Tight Glycemic Control in Critical Illness}
+      \field{title}{A Simple Insulin-Nutrition Protocol for Tight Glycemic Control in Critical Illness: Development and Protocol Comparison}
+      \field{urlday}{26}
+      \field{urlmonth}{8}
       \field{urlyear}{2026}
-      \field{volume}{345}
-      \field{year}{2001}
+      \field{volume}{8}
+      \field{year}{2006}
       \field{dateera}{ce}
       \field{urldateera}{ce}
-      \field{pages}{1359\bibrangedash 1367}
-      \range{pages}{9}
+      \field{pages}{191\bibrangedash 206}
+      \range{pages}{16}
       \verb{doi}
-      \verb 10.1056/NEJMoa011300
-      \endverb
-      \verb{file}
-      \verb Full Text PDF:/Users/juni/Zotero/storage/D2Y5GRRA/Berghe et al. - 2001 - Intensive Insulin Therapy in Critically Ill Patients.pdf:application/pdf
+      \verb 10.1089/dia.2006.8.191
       \endverb
       \verb{urlraw}
-      \verb https://www.nejm.org/doi/full/10.1056/NEJMoa011300
+      \verb https://journals.sagepub.com/action/showAbstract
       \endverb
       \verb{url}
-      \verb https://www.nejm.org/doi/full/10.1056/NEJMoa011300
+      \verb https://journals.sagepub.com/action/showAbstract
       \endverb
     \endentry
     \entry{lin_physiological_2011}{article}{}{}
@@ -207,6 +198,7 @@
       \field{month}{5}
       \field{number}{2}
       \field{series}{Glucose Modelling: Selected extended papers from the 7th {IFAC} Symposium on Modelling and Control in Biomedical Systems}
+      \field{shortjournal}{Computer Methods and Programs in Biomedicine}
       \field{title}{A physiological Intensive Control Insulin-Nutrition-Glucose ({ICING}) model validated in critically ill patients}
       \field{urlday}{19}
       \field{urlmonth}{1}
