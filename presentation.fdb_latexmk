@@ -1,13 +1,13 @@
 # Fdb version 4
-["biber presentation"] 1788274770.57964 "presentation.bcf" "presentation.bbl" "presentation" 1788277730.78267 0
+["biber presentation"] 0 "presentation.bcf" "presentation.bbl" "presentation" 1788801189.76839 -1
   "myreferences.bib" 1787749960.85828 71967 886c94c409f6bd0145d8c4ed9da650e8 ""
-  "presentation.bcf" 1788277730.6701 108881 ee120fdef78440dc9fe0b26b2e92606e "pdflatex"
+  "presentation.bcf" 1788801189.6445 108961 f96f01cb29ad8435970ee33128890275 "pdflatex"
   (generated)
   "presentation.bbl"
   "presentation.blg"
   (rewritten before read)
-["pdflatex"] 1788277728.44594 "/Users/juni/Documents/KTH/Thesis/Documents/kthlatex-master/kthpresentation/presentation.tex" "presentation.pdf" "presentation" 1788277730.78296 0
-  "/Users/juni/Documents/KTH/Thesis/Documents/kthlatex-master/kthpresentation/presentation.tex" 1788277728.2213 13132 869fbb5507bc22a435399b726af18e3d ""
+["pdflatex"] 1788801187.45787 "/Users/juni/Documents/KTH/Thesis/Documents/kthlatex-master/kthpresentation/presentation.tex" "presentation.pdf" "presentation" 1788801189.76873 0
+  "/Users/juni/Documents/KTH/Thesis/Documents/kthlatex-master/kthpresentation/presentation.tex" 1788801187.23156 15972 7884397501a33dbcc1bd747b90670205 ""
   "/usr/local/texlive/2026/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2026/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
   "/usr/local/texlive/2026/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1246382020 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -40,6 +40,10 @@
   "/usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb" 1248133631 32001 6aeea3afe875097b1eb0da29acd61e28 ""
   "/usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb" 1248133631 30251 6afa5cb1d0204815a708a080681d4674 ""
   "/usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb" 1248133631 36299 5f9df58c2139e7edcf37c8fca4bd384d ""
+  "/usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb" 1248133631 36741 fa121aac0049305630cf160b86157ee4 ""
+  "/usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb" 1248133631 35752 024fb6c41858982481f6968b5fc26508 ""
+  "/usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb" 1248133631 32722 d7379af29a190c3f453aba36302ff5a9 ""
+  "/usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb" 1248133631 32362 179c33bbf43f19adbb3825bb4e36e57a ""
   "/usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb" 1248133631 24457 5cbb7bdf209d5d1ce9892a9b80a307cc ""
   "/usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb" 1248133631 24393 3b7eb51a67a0a62aec5849271bdb9c2e ""
   "/usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb" 1248133631 24420 52dbb8e8aa0069a1b987309557f8d303 ""
@@ -244,18 +248,22 @@
   "/usr/local/texlive/2026/texmf-var/web2c/pdftex/pdflatex.fmt" 1776867196 3648536 6625d9070e5e219c8332a8143bd45f1e ""
   "/usr/local/texlive/2026/texmf.cnf" 1774209515 577 648cd9f92f9c0eac486f4c71c85cfbbe ""
   "kthgraphics/KTH-logo.pdf" 1659714334 71365 402fa3b7bb4568f72f00bd9996f7ed2b ""
+  "kthgraphics/estimators.pdf" 1788801139.6161 129508 4cfb11eb89b86705e742b07ec8666cea ""
   "kthgraphics/glucoreg-overview.pdf" 1786441106.33112 106501 a1a47bbf65c4ce56ee00b75e1cc15ecc ""
   "kthgraphics/insulin_wheel.pdf" 1787748477.00095 104351 f7eccd40b8956663d19ab47de4193629 ""
   "kthgraphics/motivation.pdf" 1785141678.9297 930066 111770eb70ac6ee74dff49e267a78192 ""
   "kthgraphics/new_problem.pdf" 1786452307.9845 63837 4529d6e68fdb361497b2a4b54d4605b5 ""
+  "kthgraphics/patient_framework.pdf" 1788800988.53414 117922 8158f761cf5c546d74482574b88a1676 ""
+  "kthgraphics/patient_inputs.pdf" 1788800662.32077 103211 2157b07083070d445a3dfa82f12429a3 ""
+  "kthgraphics/patient_states.pdf" 1788800673.601 105807 4b972110e933449216f21b85ceb26a4c ""
   "kthgraphics/previous_patient.pdf" 1788274261.76576 47634 907abe52d8c9c93f346caf57abaa9e5a ""
-  "presentation.aux" 1788277730.66731 7406 35e81f057427b9d2c94850be5296938f "pdflatex"
-  "presentation.bbl" 1788274789.57419 19397 fd9404666f121c1984abde8b3b471973 "biber presentation"
-  "presentation.nav" 1788277730.67083 3984 6aca0c1daee14963b524ad93ab3402ed "pdflatex"
-  "presentation.out" 1788277730.6692 1486 7aa396b60c9da0a466bf87f9a4e5bad4 "pdflatex"
-  "presentation.run.xml" 1788277730.67076 2369 e682bb562b0152650dbb38572be2f79c "pdflatex"
-  "presentation.tex" 1788277728.2213 13132 869fbb5507bc22a435399b726af18e3d ""
-  "presentation.toc" 1788277730.67086 604 c320e892491681abe96453ccd19ff57b "pdflatex"
+  "presentation.aux" 1788801189.6414 8210 bae028a0e73ae839879495644a85e2fa "pdflatex"
+  "presentation.bbl" 1788776901.61514 24497 ba8185f3ee561599d7bf373583be2d77 "biber presentation"
+  "presentation.nav" 1788801189.64524 4419 63d188469b866214be91275896ed3c30 "pdflatex"
+  "presentation.out" 1788801189.64355 1486 eb9abad41c6676c9c9830d899e85d4a5 "pdflatex"
+  "presentation.run.xml" 1788801189.64518 2369 e682bb562b0152650dbb38572be2f79c "pdflatex"
+  "presentation.tex" 1788801187.23156 15972 7884397501a33dbcc1bd747b90670205 ""
+  "presentation.toc" 1788801189.64529 604 bcaefacaeeaee6e996d71262d17b9104 "pdflatex"
   (generated)
   "presentation.aux"
   "presentation.bcf"

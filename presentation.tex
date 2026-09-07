@@ -102,8 +102,7 @@
     \end{column}
     \begin{column}{0.48\linewidth}
       \begin{itemize}
-        \item Critically ill patients' bodies do not respond normally to insulin.
-        \item Stress induced from critical illness has been observed with an increase of resistance to insulin.
+        \item Stress-induced insulin resistance has been observed in critically ill patients.
         \item Impaired glycogen production in the liver creates an excess of blood glucose (hyperglycaemia).
         \note{Mention that the break in the chain is just for visual purposes.}
       \end{itemize} 
@@ -156,7 +155,7 @@
     \end{column}
     \begin{column}{0.33\linewidth}
       \begin{itemize}
-          \item Requires specialized clinicians to administer insulin and feeding from complex flowcharts.
+          \item Clinicians administer insulin and feeding from complex flowcharts.
           \item Struggles to adapt to the dynamic health of critically ill patients.
       \end{itemize}
     \end{column}
@@ -228,7 +227,25 @@
       \end{tabularx}
     \end{table}
   \end{block}
+  \note{More details on the exact formulation of the dynamics can be read in the paper in further reading.}
 \end{frame}
+
+% \begin{frame}
+%   \frametitle{ICING Equations}
+%   \begin{block}{}
+%     \begin{align*}
+%       \dot{G} &= - p_{G}G(t) - S_{I}(t)G(t)\frac{Q(t)}{1+\alpha_{G}Q(t)} + \frac{P(t)+E_G-C_G}{V_G} \\
+%       \dot{Q} &= n_{I}(I(t)-Q(t))-n_{C}\frac{Q(t)}{1+\alpha_{G}Q(t)}  \\
+%       \dot{I} &= -n_{K}I(t) - n_{L}\frac{I(t)}{1+\alpha_{I}I(t)} - n_{I}(I(t)-Q(t)) + \frac{u_{ex}(t)}{V_I} \nonumber \\
+%               &\quad + \frac{(1-x_{L})u_{en}(t)}{V_I} \\
+%       \dot{P_1} &= -d_{1}P_1 + D(t) \\
+%       \dot{P_2} &= -\min\left(d_{2}P_2,P_{max}\right) + d_{1}P_1  \\
+%       u_{en}(t) &= k_1 \exp\left(-\frac{k_{2}}{k_{3}}I(t)\right), \quad
+%                   \text{when C-peptide data is not available}  \\
+%       P(t) &= \min\left(d_{2}P_2,P_{max}\right) + P_N(t). 
+%     \end{align*}
+%   \end{block}
+% \end{frame}
 
 \begin{frame}
  \frametitle{Computational Approximation of the ICING model} 
@@ -335,20 +352,20 @@
 \begin{frame}
   \frametitle{Formulation of Synthetic Patients}
   \begin{columns}
-    \begin{column}{0.48\linewidth}
+    \begin{column}{0.50\linewidth}
         \begin{figure}
           \centering
           \includegraphics[width=\linewidth]{kthgraphics/previous_patient.pdf} 
           \caption{An example of a simulation procedure \parencite{lotz_monte_2008}.}
         \end{figure}
     \end{column}
-    \begin{column}{0.48\linewidth}
+    \begin{column}{0.50\linewidth}
       \begin{itemize}
-      \item Synthetic patient trajectories are utilized to model clinical insulin-glucose data.
-      \item Such data are often limited to perturbations in previously recorded clinical data.
-      \item Sampling from a distribution of patient insulin-glucose states would allow for a greater number of diverse synthetic trajectories.
+        \item Synthetic patient trajectories model clinical insulin--glucose dynamics.
+        \item Existing methods typically perturb previously recorded clinical data.
       \end{itemize}
     \end{column}
+
   \end{columns}
 \end{frame}
 
@@ -374,7 +391,76 @@
 
 \subsection{Main Results}
 
+\begin{frame}
+  \frametitle{Generating Synthetic Patient Trajectories}
+  \begin{columns}
+    \begin{column}{0.50\linewidth}
+    \begin{figure}
+      \includegraphics[width=\linewidth]{kthgraphics/patient_framework.pdf}
+      \caption{Proposed framework.}
+    \end{figure}
+    \end{column}
+    \begin{column}{0.50\linewidth}
+      \begin{itemize}
+        \item Sampled patient inputs from observed distributions and insulin sensitivity from a predefined distribution.
+        \item Generated diverse initial insulin--glucose states across synthetic patients.
+        \item Simulated unique trajectories over time without manual interventions.
+      \end{itemize} 
+    \end{column}
+  \end{columns}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Synthetic Patients' Distributions}
+  \begin{columns}
+    \begin{column}{0.50\linewidth}
+      \begin{figure}
+        \includegraphics[width=\linewidth]{kthgraphics/patient_inputs.pdf}
+        \caption{Patients' initial inputs and insulin sensitivity.}
+      \end{figure} 
+    \end{column}
+    \begin{column}{0.50\linewidth}
+      \begin{figure}
+        \includegraphics[width=\linewidth]{kthgraphics/patient_states.pdf}
+        \caption{Patients' initial states.}
+      \end{figure} 
+    \end{column}
+  \end{columns}
+  \note{Mention that $S_I$ is taken as a prior from \parencite{davidson_multi-input_2019}}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Estimators Performance in Estimating Blood Glucose}
+  \begin{columns}
+    \begin{column}{0.50\linewidth}
+      \begin{figure}
+        \includegraphics[width=\linewidth]{kthgraphics/estimators.pdf}
+        \caption{something probably}
+      \end{figure}
+    \end{column}
+    \begin{column}{0.48\linewidth}
+      \begin{itemize}
+        \item something something
+      \end{itemize} 
+    \end{column}
+  \end{columns}
+  
+
+\end{frame}
+
 \subsection{Key Ideas Behind Implementation}
+
+\begin{frame}
+  \frametitle{GLUC-ICU Dataset from Karolinska University Hospital}
+  Specifications:
+  \begin{enumerate}
+    \item 27113 patients in the ICU
+    \item 39.5\% of the total number of patients given insulin at some point in their stay
+    \item 100 million minutes of feeding data and 80 million minutes of insulin
+    data to sample from
+  \end{enumerate}
+\end{frame}
+
 
 \section{Summary}
 
