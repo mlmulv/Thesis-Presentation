@@ -13,6 +13,7 @@
   style=authoryear,
   sorting=ynt,
 ]{biblatex}
+\usepackage{bm}
 \addbibresource{myreferences.bib}
 \AtEveryBibitem{%
   \clearfield{url}%
@@ -61,7 +62,7 @@
   \titlepage
   \note[item]{Supervisor - Martin Lindström}
   \note[item]{Examiner - Ragnar Thobaben}
-  \note[item]{Opponent - Divyayan Day}
+  \note[item]{Opponent - Hugo Sacilotto}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -82,8 +83,8 @@
   \frametitle{Fundamentals of Glucoregulation}
   \begin{figure}
     \centering
-    \includegraphics[height=0.7\textheight]{kthgraphics/glucoreg-overview.pdf}
-    \caption{Flowchart of glucoregulation in healthy individuals.}
+    \includegraphics[height=0.9\textheight]{kthgraphics/glucoreg-overview.pdf}
+    % \caption{Flowchart of glucoregulation in healthy individuals.}
   \end{figure}
   \note[item]{The thesis revolves around the functionality of glucoregulation.}
   \note[item]{A high level diagram of the human insulin-glucose system can be described as the image.}
@@ -95,8 +96,8 @@
     \begin{column}{0.48\linewidth}
       \only<1->{
         \begin{figure}
-          \includegraphics[height=0.7\textheight]{kthgraphics/new_problem.pdf}
-          \caption{Consequence of insulin resistance in ICU patients.}
+          \includegraphics[height=0.8\textheight]{kthgraphics/new_problem.pdf}
+          % \caption{Consequence of insulin resistance in ICU patients.}
         \end{figure}
       }
     \end{column}
@@ -145,21 +146,13 @@
 
 \begin{frame}
   \frametitle{Overview of Ad-hoc Sliding Protocols}
-  \begin{columns}
-    \begin{column}{0.66\linewidth}
-      \begin{figure}
-        \centering
-        \includegraphics[width=0.95\linewidth]{kthgraphics/insulin_wheel.pdf}
-        \caption{Example of the SPRINT Protocol Insulin Wheel \parencite{lonergan_simple_2006}.}
-      \end{figure}
-    \end{column}
-    \begin{column}{0.33\linewidth}
-      \begin{itemize}
-          \item Clinicians administer insulin and feeding from complex flowcharts.
-          \item Struggles to adapt to the dynamic health of critically ill patients.
-      \end{itemize}
-    \end{column}
-  \end{columns}
+    \begin{figure}
+      \centering
+      \includegraphics[height=0.85\textheight]{kthgraphics/wheel.pdf}
+    \end{figure}
+    \note[item]{Example of the SPRINT Protocol Insulin Wheel \parencite{lonergan_simple_2006}.}
+    \note[item]{Clinicians administer insulin and feeding from complex flowcharts.}
+    \note[item]{Struggles to adapt to the dynamic health of critically ill patients.}
 \end{frame}
 
 
@@ -202,6 +195,7 @@
   \frametitle{Intensive Control Insulin-Nutrition-Glucose (ICING) model}
 
   \citeauthor{lin_physiological_2011} has developed a clinically-validated nonlinear insulin-glucose model with the following main components
+  \vspace{0.2em}
   \begin{block}{}
     \begin{table}
       \centering
@@ -253,6 +247,7 @@
     \item The ICING model equations are defined in continuous-time
     \item Discretization of the model is required for the presented estimation methods
  \end{itemize}
+  \vspace{0.2em}
   \begin{exampleblock}{For an example dynamic $F$}
    \begin{align*}
     t_k &= t_{k-1} + \Delta, \\
@@ -266,7 +261,8 @@
 
 \begin{frame}
   \frametitle{Bayesian Filtering}
-  The discrete-time dynamic ICING model can be represented in the stochastic state-space. \\ 
+  The discrete-time dynamic ICING model can be represented in the stochastic state-space.
+  \vspace{0.2em} 
   \begin{columns}
     \begin{column}{0.45\linewidth} 
       \begin{block}{State-space Representation}
@@ -302,7 +298,7 @@
 \begin{frame}
   \frametitle{Extended Kalman Filter}
   Approximates \alert{nonlinear} and \alert{Gaussian} dynamic and measurement models as a linear transformation.
-  
+  \vspace{0.4em}
   \begin{block}{}
     \begin{enumerate}
     \item \textit{Prediction step} 
@@ -329,6 +325,7 @@
 \begin{frame}
   \frametitle{Bootstrap Particle Filter}
   Formulates the posterior of the dynamic function as a Monte Carlo approximation.
+  \vspace{0.4em}
   \begin{block}{}
     \begin{enumerate}
     \item Sample $N$ particles from the dynamic function
@@ -347,26 +344,48 @@
   \end{block}
 \end{frame}
 
+\begin{frame}
+  \frametitle{Parameter Estimation}
+  \begin{itemize}
+    \item There exists unrepresented ICING dynamics $S_{I,k}$ and $u_{\,en, k}$.
+    \item Naively assigning either as a general population constant can hinder
+    the performance of the estimators.
+  \end{itemize}
+  \vspace{0.1em}
+  \begin{block}{State Augmentation}
+    \begin{enumerate}
+      \item Add artificial process noise to the parameters of interest $\theta_k$
+      \begin{align*}
+        \theta_k &= \theta_{k-1} + \epsilon_{k-1}, && \text{with } \epsilon_{k-1} \sim \mathcal{N}(0,\,W_{k-1}).
+      \end{align*}
+      \item Augment the parameters to the existing dynamics
+      \begin{align*}
+        \tilde{x}_k &= \left[x_k, \theta_k\right]^{\sf T}.
+      \end{align*}
+      \item Update the state-space representation
+      \begin{align*}
+        \tilde{x}_k &\sim p(\tilde{x}_{k} \mid \tilde{x}_{k-1},\,u_{k-1}),\\
+      y_{k} &\sim p(y_{k} \mid \tilde{x}_k).
+      \end{align*}
+    \end{enumerate}
+  \end{block} 
+
+\end{frame}
+
 \subsection{Previous Work}
 
 \begin{frame}
   \frametitle{Formulation of Synthetic Patients}
-  \begin{columns}
-    \begin{column}{0.50\linewidth}
-        \begin{figure}
-          \centering
-          \includegraphics[width=\linewidth]{kthgraphics/previous_patient.pdf} 
-          \caption{An example of a simulation procedure \parencite{lotz_monte_2008}.}
-        \end{figure}
-    \end{column}
-    \begin{column}{0.50\linewidth}
-      \begin{itemize}
-        \item Synthetic patient trajectories model clinical insulin--glucose dynamics.
-        \item Existing methods typically perturb previously recorded clinical data.
-      \end{itemize}
-    \end{column}
+    \begin{figure}
+      \centering
+      \includegraphics[width=0.9\linewidth]{kthgraphics/previous_patient.pdf} 
+      \caption{An example of a simulation procedure \parencite{lotz_monte_2008}.}
+    \end{figure}
 
-  \end{columns}
+  \begin{itemize}
+    \item Synthetic patient trajectories model clinical insulin--glucose dynamics.
+    \item Existing methods typically perturb previously recorded clinical data.
+  \end{itemize}
 \end{frame}
 
 \begin{frame}
@@ -386,6 +405,25 @@
   \end{itemize}
 \end{frame}
 
+\begin{frame}
+  \frametitle{Estimating Insulin Sensitivity}
+  \begin{columns}
+    \begin{column}{0.5\linewidth}
+      \begin{figure}
+        \includegraphics[width=\linewidth]{kthgraphics/patient_glucose.pdf}
+      \end{figure} 
+    \end{column}
+    \begin{column}{0.5\linewidth}
+      \begin{itemize}
+        \item Integral-based Parameter Identification method is a nonlinear and nonconvex parameter identification method \parencite{hann_integral-based_2005}.
+        \item Estimates insulin sensitivity and other parameters as a least squares solution.
+        \item Linearly interpolates between glucose measurements.
+      \end{itemize}
+    \end{column}
+  \end{columns}
+  \note[item]{Doesn't account for noise in measurements.}
+
+\end{frame}
 
 \section{Results and Contributions}
 
@@ -397,12 +435,12 @@
     \begin{column}{0.50\linewidth}
     \begin{figure}
       \includegraphics[width=\linewidth]{kthgraphics/patient_framework.pdf}
-      \caption{Proposed framework.}
     \end{figure}
     \end{column}
     \begin{column}{0.50\linewidth}
       \begin{itemize}
-        \item Sampled patient inputs from observed distributions and insulin sensitivity from a predefined distribution.
+        \item Sampled patient inputs from observed distributions 
+        \item Sampled insulin sensitivity from a predefined distribution \parencite{davidson_multi-input_2019}.
         \item Generated diverse initial insulin--glucose states across synthetic patients.
         \item Simulated unique trajectories over time without manual interventions.
       \end{itemize} 
@@ -411,55 +449,230 @@
 \end{frame}
 
 \begin{frame}
-  \frametitle{Synthetic Patients' Distributions}
+  \frametitle{Synthetic Patient Variability}
   \begin{columns}
     \begin{column}{0.50\linewidth}
       \begin{figure}
-        \includegraphics[width=\linewidth]{kthgraphics/patient_inputs.pdf}
-        \caption{Patients' initial inputs and insulin sensitivity.}
+        \includegraphics[width=0.85\linewidth]{kthgraphics/patient_inputs.pdf}
+        \caption{Initial inputs and insulin sensitivity.}
       \end{figure} 
     \end{column}
     \begin{column}{0.50\linewidth}
       \begin{figure}
-        \includegraphics[width=\linewidth]{kthgraphics/patient_states.pdf}
-        \caption{Patients' initial states.}
+        \includegraphics[width=0.85\linewidth]{kthgraphics/patient_states.pdf}
+        \caption{Initial insulin-glucose states.}
       \end{figure} 
     \end{column}
   \end{columns}
-  \note{Mention that $S_I$ is taken as a prior from \parencite{davidson_multi-input_2019}}
+  \begin{itemize}
+    \item The empirical histograms reflect variability in baseline insulin-glucose dynamics.
+  \end{itemize}
 \end{frame}
 
 \begin{frame}
-  \frametitle{Estimators Performance in Estimating Blood Glucose}
+  \frametitle{Blood-Glucose Estimation with Known Insulin Sensitivity}
   \begin{columns}
-    \begin{column}{0.50\linewidth}
+    \begin{column}{0.47\linewidth}
       \begin{figure}
         \includegraphics[width=\linewidth]{kthgraphics/estimators.pdf}
-        \caption{something probably}
       \end{figure}
     \end{column}
-    \begin{column}{0.48\linewidth}
-      \begin{itemize}
-        \item something something
-      \end{itemize} 
+    \begin{column}{0.53\linewidth}
+      \begin{table}[ht!]
+        \centering
+        \setlength{\tabcolsep}{6pt}
+        \begin{tabular}{lcc}
+            \toprule
+            \textbf{Estimator} & \textbf{Avg MSE} & \textbf{SD MSE} \\
+            \midrule
+            EKF & 3.46 & 9.64 \\
+            \addlinespace[2pt]
+
+            PF 100 & 1.58 & 5.28 \\
+            \addlinespace[2pt]
+
+            PF 1000 & 0.926 & 2.55 \\
+            \addlinespace[2pt]
+
+            PF 2500 & 0.865 & 2.33 \\ 
+            \addlinespace[2pt]
+
+            PF 5000 & 0.850 & 2.26 \\
+            \bottomrule
+        \end{tabular}
+      \end{table}
     \end{column}
   \end{columns}
-  
+  \note[item]{MSE shown on a logarithmic scale.}  
+  \note[item]{MSE and SD is averaged over patients.}  
+  \note[item]{PF lowers both the mean error and the spread.}  
+  \note[item]{These results assume we know the insulin sensitivity.}  
+  \begin{itemize}
+    \item Particle filters achieve lower blood-glucose estimation error than the EKF.
+      \begin{itemize}
+        \item Increasing the particle count further reduces both the mean MSE and
+            the between-patient variability.
+      \end{itemize}
+    \item PF 1000 provides most of the accuracy improvement at a lower computational cost than PF 2500 and PF 5000.
+  \end{itemize}
+\end{frame}
 
+
+\begin{frame}
+  \frametitle{Estimating Constant and Time-Varying Insulin Sensitivity}
+  \begin{columns}
+    \begin{column}{0.5\linewidth}
+      \begin{figure}
+        \includegraphics[width=\linewidth]{kthgraphics/SI_est.pdf}
+      \end{figure}  
+    \end{column}
+    \begin{column}{0.5\linewidth}
+      \begin{itemize}
+        \item For constant $S_I$, PF 2000 reduces the estimation MSE
+              substantially faster than the EKF and achieves a lower steady-state error.
+        \item For time-varying $S_I$, both methods show increasing MSE,
+              indicating difficulty tracking changes in insulin sensitivity.
+      \end{itemize}
+    \end{column}
+  \end{columns}
 \end{frame}
 
 \subsection{Key Ideas Behind Implementation}
 
 \begin{frame}
-  \frametitle{GLUC-ICU Dataset from Karolinska University Hospital}
-  Specifications:
-  \begin{enumerate}
-    \item 27113 patients in the ICU
-    \item 39.5\% of the total number of patients given insulin at some point in their stay
-    \item 100 million minutes of feeding data and 80 million minutes of insulin
-    data to sample from
-  \end{enumerate}
+  \frametitle{Design of Synthetic Patient Trajectories}
+
+  \begin{itemize}
+    \item Real ICU insulin and feeding records from Karolinska University Hospital are used to generate realistic synthetic patient trajectories:
+    \begin{enumerate}
+      \item 27,113 ICU patients
+      \item 39.5\% of patients received insulin during their ICU stay
+      \item Approximately 100 million minutes of recorded feeding data
+      \item Approximately 80 million minutes of recorded insulin data
+    \end{enumerate}
+    \vspace{0.1em}
+    \item Parenteral glucose and insulin inputs follow periodic exponential ramps.
+    \item The feeding input is held constant.
+    \item Time-varying insulin sensitivity is represented by a
+          piecewise-linear function.
+  \end{itemize}
 \end{frame}
+
+% \begin{frame}
+%   \frametitle{ICING Model Configuration}
+%   \begin{itemize}
+%     \item The ICING model is discretized with a time step of
+%           $\Delta t = 1$ minute.
+%     \item Blood-glucose measurements are available every 120 minutes
+%           \[
+%           f_{\mathrm{BG}} = \frac{1}{120}\ \mathrm{min}^{-1},
+%           \]
+%           and are corrupted with additive Gaussian noise $\mathcal{N}(0,0.25^2)$.
+%     \item The process-noise covariance is set to 10\% of the variance of the corresponding initial-state estimates and scaled by the measurement frequency:
+%     \begin{align*}
+%       q_k &\sim \mathcal{N}\!\bigl(0, \mathrm{diag}(\bm{\sigma}^2\bigr),\\
+%       {\bm{\sigma}}^2 &= \frac{1}{120}\begin{bmatrix}
+%       \frac{{\sigma_G}^2}{10} &
+%       \frac{{\sigma_Q}^2}{10} &
+%       \cdots &
+%       \frac{{\sigma_{P_2}}^2}{10} &
+%       1.0\times10^{-8}
+%       \end{bmatrix}^{\mathsf{T}}.
+%     \end{align*}
+%     \item Insulin-sensitivity is modeled as log-normal for a piecewise period of 1200 minutes
+%     \begin{align*}
+%       q_{S_I,k} &\sim \mathcal{N}\left(1, \,\frac{{\sigma_{S_I}}^2}{1200} \right), &
+%       \text{with } \sigma_{S_I} &= \frac{1}{3}.
+%     \end{align*}
+%   \end{itemize}
+% \end{frame}
+
+\begin{frame}
+  \frametitle{ICING Model Configuration}
+
+  \begin{itemize}
+    \item The ICING model is discretized with a time step of
+          $\Delta t = 1$ minute.
+
+    \item Blood-glucose measurements are available every 120 minutes:
+          \[
+          f_{\mathrm{BG}}=\frac{1}{120}\ \mathrm{min}^{-1}.
+          \]
+          Measurement noise is additive Gaussian:
+          \[
+          r_k\sim\mathcal{N}(0,0.25^2).
+          \]
+
+    \item Process noise is assigned as 10\% of the corresponding
+          initial-state variances:
+          \[
+          q_k\sim
+          \mathcal{N}\!\left(
+            \mathbf{0},\operatorname{diag}(\bm{\sigma}^2)
+          \right).
+          \]
+
+    \item Insulin sensitivity is modeled as a positive, piecewise-varying
+          parameter over 1200-minute intervals:
+          \[
+          \log S_{I,k+1}
+          =
+          \log S_{I,k}+q_{S_I,k},
+          \qquad
+          q_{S_I,k}\sim
+          \mathcal{N}\!\left(
+            0,\frac{\sigma_{S_I}^2}{1200}
+          \right),
+          \quad
+          \sigma_{S_I}=\frac{1}{3}.
+          \]
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+  \frametitle{State Estimation Evaluation Procedure}
+    \begin{itemize}
+      \item The evaluation uses $N=250$ unique synthetic patients.
+      \item The simulation lasted 12 hours to allow the estimators to converge.
+      \item EKF and PFs containing $\left(100,\,250,\,500,\,1000,\,1500, \,3000, \,5000\right)$ particles were used to compare accuracy and the average time to run the simulation.
+      \item MSE is averaged across patients according to each blood-glucose estimate $\hat{G}$ of length $L$:
+        \begin{align*}
+          \text{Avg MSE} &= \frac{1}{N L} \sum_{i=1}^{N} \sum_{j=1}^{L} \left(G_i[j] - \hat{G}_i[j]\right)^2, \\
+          \text{SD MSE} &= \frac{1}{N-1} \sum_{i=1}^{N} \left( \frac{1}{L}\sum_{j=1}^{L} \left(G_i[j] - \hat{G}_i[j]\right)^2 - \text{Avg MSE}\right)^2
+        \end{align*}
+    \end{itemize}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Parameter-Estimation Evaluation Procedure}
+
+  \begin{itemize}
+    \item The evaluation uses $N=250$ unique synthetic patients.
+
+    \item Each patient is simulated for 60 hours to capture the relatively
+          slow changes in insulin sensitivity.
+
+    \item State-augmented EKF and PF 2000 estimators are compared under
+          two scenarios:
+          \begin{itemize}
+            \item constant insulin sensitivity
+            \item time-varying insulin sensitivity
+          \end{itemize}
+
+    \item The insulin-sensitivity MSE is computed at each time step:
+      \begin{align*}
+        \mathrm{MSE}_{S_{i,k}}
+        &=
+        \frac{1}{N}
+        \sum_{i=1}^{N}
+        \left(
+          S_{I,i}[k]-\hat{S}_{I,i}[k]
+        \right)^2.
+      \end{align*}
+  \end{itemize}
+
+\end{frame}
+
 
 
 \section{Summary}
